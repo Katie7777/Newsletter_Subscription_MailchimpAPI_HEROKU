@@ -29,10 +29,10 @@ app.post("/", function(req, res){
   };
   //fetch data from user input to string
   const jsonData = JSON.stringify(data);//turn a data into string
-  const url = "https://us11.api.mailchimp.com/3.0/lists/2e3abeb06b";
+  const url = "https://us11.api.mailchimp.com/3.0/lists/xxxxxxxxx";
   const options = {
     method:"POST",
-    auth:"katie:40fbd4bce5f3d20cbfd6cc257b16ba28-us11"
+    auth:"katie:xxxxxxxxxxxxxxxxxxxx"
   }
   //make requests:connect to mailchimp api and post data (save data to other's server: https.request)
   const request = https.request(url, options, function(response){
@@ -53,8 +53,8 @@ app.post("/", function(req, res){
 
 });
 
-// api key: 40fbd4bce5f3d20cbfd6cc257b16ba28-us11
-//audience id: 2e3abeb06b
+// api key: xxxxxxx
+//audience id: xxxxxxxxx
 
 //faulure page redirect to home page
 app.post("/failure", function(req, res){
